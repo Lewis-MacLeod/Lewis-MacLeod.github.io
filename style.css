@@ -1,0 +1,16 @@
+* {
+	font-family:Arial;
+}
+
+body {
+	color:pink;
+	background-color:royalblue;
+}
+h4, h1 { 
+	text-align:center; 
+	color:blue; 
+	background:white;
+}
+div {
+	color:white;
+}
