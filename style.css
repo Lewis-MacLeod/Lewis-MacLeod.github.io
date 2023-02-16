@@ -3,14 +3,50 @@
 }
 
 body {
-	color:pink;
+	color:tomato;
 	background-color:royalblue;
 }
-h4, h1 { 
+h1, h3, h4 { 
 	text-align:center; 
 	color:blue; 
 	background:white;
 }
 div {
 	color:white;
+}
+.white {
+	color:white;
+}
+/* following taken from here - https://codepen.io/ceg9498/post/creating-lined-paper */
+.card{
+	font-family: Courier, monospace;
+	background-color: white;
+	background: repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+	background-position-y: 34px;
+	width:900px;
+	height:900px;
+	padding: 0;
+	margin-top: 50px;
+ 
+	margin-right: 15px;
+}
+.card-title {
+	position: relative;
+	left: 10px;
+	top: 8px;
+	font-size: 30px;
+	font-weight: bold;
+	color:black;
+}
+.card-text {
+	position: relative;
+	top: 30px;
+	font-size: 18px;
+	margin: 0 20px;
+	line-height: 27px;
+	color:black;
+}
+.card header {
+	height: 36px;
+	background: linear-gradient(white, white 33px,pink 35px, pink 36px);
 }
