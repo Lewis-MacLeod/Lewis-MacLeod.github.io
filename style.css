@@ -4,14 +4,15 @@
 	padding:0;
 }
 body {
-	color:tomato;
-	background-color:royalblue;
+	color:#CD5334;
+	background-color:#0D3B66;
 }
 nav {
 	position:relative;
 	width:100%;
 	height:60px;
-	background:#fff;
+	background:#98D2EB;
+	
 	
 }
 nav ul {
@@ -22,10 +23,13 @@ nav ul li {
 	list-style: none;
 	position:relative;
 }
+nav ul li:hover {
+	background-color:#f49e4c;
+}
 nav ul li a {
 	display:block;
 	font-family:arial;
-	color:#222;
+	color:#cd5334;
 	font-size:14px;
 	padding:22px 14px;
 	text-decoration:none;
@@ -33,30 +37,31 @@ nav ul li a {
 nav ul li ul {
 	display:none;
 	position:absolute;
-	background-color:white;
+	background-color:#cd5334;
 	padding:1px;
 	border-radius:0px 0px 4px 4px;
 }
 nav ul li:hover ul {
 	display:block;
+	background-color:#e1f2fe
+	
 }
-
 nav ul li ul li {
 	width:180px;
 	border-radius:4px;
 }
-nav ul li ul li a{
+nav ul li ul li a {
 	padding:12px 16px;
 }
-nav ul li ul li a:hover{
-	background-color:#f3f3f3;
+nav ul li ul li a:hover {
+	background-color:#98d2eb;
 }
 
 
 h1, h3, h4 { 
 	text-align:center; 
 	color:white; 
-	background:royalblue;
+	background:#0D3B66;
 }
 div {
 	color:white;
@@ -68,7 +73,7 @@ div {
 .card{
 	font-family:Courier, monospace;
 	background-color:white;
-	background:repeating-linear-gradient(white, white 25px, #9198e5 26px, #9198e5 27px);
+	background:repeating-linear-gradient(#faf0ca, #faf0ca 25px, #9198e5 26px, #9198e5 27px);
 	background-position-y:34px;
 	width:900px;
 	height:900px;
@@ -82,7 +87,7 @@ div {
 	top:8px;
 	font-size:30px;
 	font-weight:bold;
-	color:black;
+	color:#f5853f;
 }
 .card-text {
 	position:relative;
@@ -90,9 +95,9 @@ div {
 	font-size:18px;
 	margin:0 20px;
 	line-height:27px;
-	color:black;
+	color:#d5472b;
 }
 .card header {
 	height:36px;
-	background:linear-gradient(white, white 33px,pink 35px, pink 36px);
+	background:linear-gradient(#faf0ca, #faf0ca 33px,pink 35px, pink 36px);
 }
