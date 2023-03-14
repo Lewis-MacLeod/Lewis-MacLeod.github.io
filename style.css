@@ -3,6 +3,14 @@
 	margin:0;
 	padding:0;
 }
+iframe {
+	float:right;
+	display:inline;
+	padding-right:50px;
+	padding-top:45px;
+	padding-left:50px;
+	padding-bottom:10px;
+}
 body {
 	color:#CD5334;
 	background-color:#0D3B66;
@@ -76,7 +84,7 @@ div {
 	background:repeating-linear-gradient(#faf0ca, #faf0ca 25px, #9198e5 26px, #9198e5 27px);
 	background-position-y:34px;
 	width:900px;
-	height:900px;
+	height:600px;
 	padding:0;
 	margin-top:50px;
 	margin-right:15px;
