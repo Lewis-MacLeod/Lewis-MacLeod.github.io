@@ -7,6 +7,15 @@
 <meta charset='utf-8' />
 <title> Mac's Cantina </title>
 <link rel="icon" type="image/x-icon" href="/favicon (1).ico">
+<script src="script.js"></script>
+
+<style>
+#div1 {
+background: #98D2EB;
+color: #cd5334;
+padding: 50px;
+}
+</style>
 </head>
 
 <nav>
@@ -45,6 +54,81 @@
 <h1> Welcome to the Home Page! </h1>
 <br>
 <h3>This website is all about food! <br> And how to make it!</h3>
+
+<!-- the following is a time and temperature calculator -->
+<button onclick="toggle()"> Meat Cooking Time and Temperature Calculator<br>Show / Hide </button>
+<div id="div1">
+	<h2>Meat Cooking Time and Temperature Calculator</h2>
+	<p> Please enter Grams in the following format: 5g > 0.5g or 500g > 0.500g</p>
+	<form>
+		<label for="meat-type">Select Meat Type:</label>
+		<select name="meat-type" id="meat-type">
+			<option value="beef">Beef</option>
+			<option value="pork">Pork</option>
+			<option value="chicken">Chicken</option>
+			<option value="lamb">Lamb</option>
+		</select>
+		<br><br>
+		<label for="weight">Enter Weight:</label>
+		<input type="number" name="weight" id="weight">
+		<select name="unit" id="unit">
+			<option value="kg">kg</option>
+			<option value="g">g</option>
+		</select>
+		<br><br>
+		<button type="button" onclick="calculate()">Calculate</button>
+	</form>
+
+	<p id="result"></p>
+
+	<script>
+		function calculate() {
+			const meatType = document.getElementById("meat-type").value;
+			const weight = document.getElementById("weight").value;
+			const unit = document.getElementById("unit").value;
+			let cookingTime;
+			let temperature;
+
+			if (meatType === "beef") {
+				cookingTime = (weight / 0.5) * 30;
+				temperature = "Oven 180°C | Fan 160°C | Gas 4";
+			} else if (meatType === "pork") {
+				cookingTime = ((weight / 0.5) * 35) + 35;
+				temperature = "Oven 180°C | Fan 160°C | Gas 4";
+				if (weight >= 1) {
+					temperature = "Oven 220°C | Fan 200°C | Gas 6 for the first 30 minutes, then " + temperature;
+				}
+			} else if (meatType === "chicken") {
+				cookingTime = (weight * 45) + 20;
+				temperature = "Oven 200°C | Fan 180°C | Gas 6";
+			} else if (meatType === "lamb") {
+				cookingTime = ((weight / 0.5) * 40) + 40;
+				temperature = "Oven 170°C | Fan 150°C | Gas 3";
+			}
+
+			const result = `Total cooking time for ${weight} ${unit} of ${meatType} is ${cookingTime} minutes at ${temperature}.`;
+			document.getElementById("result").textContent = result;
+		}
+	</script>
+</div>
+
+<!-- button -->
+<script>
+function toggle() {
+	var x = document.getElementById("div1");
+	if(x.style.display === "none") {
+		x.style.display = "block";
+	}
+	else {
+		x.style.display = "none";
+	}
+}
+// hide button on load
+window.addEventListener('load', function() {
+  var x = document.getElementById("div1");
+  x.style.display = "none";
+});
+</script>
 
 <iframe src="example-white-image.png" 
 width='507' height='543' frameborder='0'></iframe>
