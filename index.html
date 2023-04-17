@@ -131,11 +131,23 @@ window.addEventListener('load', function() {
 });
 </script>
 
-<!--
-<div class='flex-box-img'>
-<iframe src="example-white-image.png"></iframe>
+<style>
+<!-- taken from - https://stackoverflow.com/questions/6169666/how-to-resize-an-image-to-fit-in-the-browser-window -->
+.imgbox {
+	display: flex;
+	height: 100vh;
+}
+.center-fit {
+	max-width: 100vh;
+	max-height: 100vh;
+	margin: auto;
+}
+</style>
+
+<div class='imgbox'>
+	<img class='center-fit' src="jpegs/sc_21.jpg"></img>
+	<img class='center-fit' src="jpegs/tablet_14.jpg"></img>	
 </div>
--->
 
 <article>
 	<!-- following taken from here - https://codepen.io/ceg9498/post/creating-lined-paper -->
@@ -163,6 +175,13 @@ window.addEventListener('load', function() {
 	</div>
 	<!-- end -->
 </article>
+
+<div class='imgbox'>
+	<img class='center-fit' src="jpegs/sc_18.jpg"></img>
+	<img class='center-fit' src="jpegs/sc_19.jpg"></img>	
+	<img class='center-fit' width=90% height=90% src="jpegs/sc_5.jpg"></img>	
+	<img class='center-fit' width=90% height=90% src="jpegs/sc_7.jpg"></img>		
+</div>
 
 <br>
 </body>

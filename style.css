@@ -19,7 +19,7 @@ body {
 
 /* the navbar */
 nav {
-	position:relative;
+	position:flex;
 	width:100%;
 	height:60px;
 	background:#98D2EB;
@@ -81,11 +81,7 @@ div {
 .white {
 	color:white;
 }
-/* */
 
-
-
-/* */
 
 /* following code taken from here - https://codepen.io/ceg9498/post/creating-lined-paper */
 .card{
@@ -95,7 +91,7 @@ div {
 	background-position-y:34px;
 	width:800px;
 	height:900px;
-	padding:0;
+	padding:auto;
 	margin-top:27px;
 	margin-left:40px;
 	margin-right:40px;
